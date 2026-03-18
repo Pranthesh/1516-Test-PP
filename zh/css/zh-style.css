@@ -1,0 +1,208 @@
+.hero-section h1
+{
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    line-height: 92px;
+    font-family: 'GlowSansTC';
+    font-weight: 700;
+}
+.hero-section h1 span
+{
+	font-weight: 500;
+	font-family: 'REEJI-CHAO-YuanGBT';
+    width: 100%;
+    text-align: center;
+    line-height: 82px;
+}
+.about-section h2
+{
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'GlowSansTC';
+    font-weight: 700;
+}
+h2
+{
+	font-size: 52px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: 'GlowSansTC';
+}
+h3
+{
+	font-size: 52px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: 'GlowSansTC';
+}
+.about-section p, .the-atmosphere-left p, .crafted-section p, .footer-right ul li, #cookieModal p, .tc-sections p
+{
+	font-size: 18px;
+    line-height: 26px;
+}
+.footer-left p
+{
+	font-size: 16px;
+    line-height: 24px;
+}
+.main-nav ul li
+{
+	font-size: 16px;
+    line-height: 18px;
+}
+p
+{
+	font-size: 18px; 
+}
+.inner-hero-section h1
+{
+	justify-content: flex-start;
+	text-align: left;
+}
+.inner-hero-section h1 span
+{
+	font-family: 'REEJI-CHAO-YuanGBT';
+	font-weight: 500;
+}
+.left-section h2
+{
+	font-family: 'REEJI-CHAO-YuanGBT';	
+}
+.btn-primary
+{
+	font-family: 'GlowSansTC';
+	font-weight: 700;
+}
+.dish-item-name
+{
+	font-family: 'GlowSansTC';
+}
+.footer-left p
+{
+	font-family: 'GlowSansTC';
+}
+
+.footer-right ul li
+{
+	font-family: 'GlowSansTC';
+	font-weight: 500;
+}
+.inner-hero-section h2
+{
+	text-align: left;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+	font-family: 'GlowSansTC';
+}
+.the-atmosphere-left h2
+{
+	font-family: 'REEJI-CHAO-YuanGBT';
+	font-weight: 500;
+}
+.crafted-section h2
+{
+	font-family: 'GlowSansTC';
+}
+.title-with-button h2
+{
+	font-family: 'GlowSansTC';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+}
+.location-hero-section h2, .menu-hero-section h2
+{	
+	font-size: 72px;
+	line-height: 72px; 
+	font-family: 'GlowSansTC';
+	font-weight: 700;
+}
+.causeway-bay-left h2
+{
+	font-family: 'REEJI-CHAO-YuanGBT';
+	font-weight: 500;
+}
+.menu-tabs .tab
+{
+	font-family: 'GlowSansTC';
+	font-weight: 700;
+}
+.tab-content-top h2
+{
+	font-family: 'GlowSansTC';
+	font-weight: 700;
+	font-size: 40px;
+    line-height: 48px;
+}
+.menu-suggestion li
+{
+	font-family: 'GlowSansTC';
+	font-size: 18px;
+	font-weight: 700;
+}
+.our-menu-list-section .left-section h3
+{
+	font-family: "aktiv-grotesk-extended", sans-serif;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 600;
+}
+.dish-item-description
+{
+	font-size: 14px;
+}
+.tab-content-top p
+{
+	font-family: 'GlowSansTC';
+}
+.mobile-header-center ul li
+{
+	font-family: 'GlowSansTC';
+	font-weight: 500 !important;
+}
+.footer-right-3 ul li:first-child a
+{
+	font-family: "aktiv-grotesk-extended", sans-serif;
+}
+.inner-hero-section-title
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+.inner-hero-section .inner-hero-section-title h1
+{
+	display: block;
+    height: auto;
+    position: static;
+}
+.dish-item-info
+{
+	padding-right: 12px;
+}
+.dish-item-description
+{
+	font-family: 'GlowSansTC';
+}
+.white-wine-list-section .dish-item-name
+{
+	font-family: "aktiv-grotesk-extended", sans-serif;
+}
+.no-chinese-font {
+	font-family: inherit !important;
+}
+.inner-hero-section.location-hero-section h1, .menu-hero-section.inner-hero-section h1
+{
+	font-family: 'GlowSansTC';
+	font-weight: 600;
+}

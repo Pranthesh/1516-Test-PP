@@ -1,0 +1,1151 @@
+/* =========================================================
+   HEADER STYLES
+========================================================= */
+
+.site-header {
+	min-height: 92px;
+	padding: 25px 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	transition: all 0.3s ease;
+}
+
+.site-header.is-sticky {
+	background-color: #ED1C24;
+}
+
+.header-inner {
+	display: flex;
+}
+
+.header-logo {
+	width: 20%;
+	display: flex;
+	align-items: center;
+}
+
+.main-nav {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+}
+
+.main-nav ul li {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.main-nav ul li a {
+	text-decoration: none;
+	color: #EAE4DD;
+}
+.main-nav ul li a:hover
+{
+	color: #BE852B;
+}
+.main-nav ul li a.active
+{
+	color: #BE852B;
+}
+.site-header.is-sticky .main-nav ul li a:hover {
+    color: #F8AEB1;
+}
+.site-header.is-sticky .main-nav ul li a.active {
+    color: #F8AEB1;
+}
+
+.social-icons {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 16px;
+}
+
+.lang-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.lang-wrapper::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	width: 1px;
+	height: 15px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 102px;
+	height: 72px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 100;
+}
+
+.lang-option {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	transition: background 0.3s;
+}
+
+.lang-option.active {
+	background-color: #ED1C24;
+	color: #EAE4DD;
+}
+
+.lang-option:not(.active) {
+	background-color: #EAE4DD;
+	color: #ED1C24;
+}
+
+.lang-option:hover {
+	filter: brightness(0.95);
+}
+.tabler-menu
+{
+	display: none;
+}
+
+/* =========================================================
+   HERO / BANNER SECTION
+========================================================= */
+
+.hero-section {
+	position: relative;
+}
+
+/* Hero Heading */
+.hero-section h1 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+	padding: 0 20px;
+}
+
+.banner-slide {
+	height: 100vh;
+	background-position: center !important;
+	background-size: cover;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0 20px;
+}
+
+.banner-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.banner-slide-1 {
+	background-image: url(../images/1516-fushion-restaurant-food-hong-kong.jpg);
+}
+
+.banner-slide-2 {
+	background-image: url(../images/1516-fushion-restaurant-drinks-aerial-view.jpg);
+}
+
+.hero-section .slick-dots {
+	display: flex !important;
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	list-style: none;
+	gap: 12px;
+}
+
+.hero-section .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #EAE4DD;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	padding: 0;
+}
+
+.hero-section .slick-dots li.slick-active button {
+	background-color: #EAE4DD;
+}
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+	padding: 96px 20px;
+	background-color: #741012;
+}
+
+.about-section h2 {
+	max-width: 500px;
+	margin: 0 auto 32px;
+	text-align: center;
+	color: #EAE4DD;
+}
+.about-section p
+{
+	text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    color: #EAE4DD;
+}
+
+/* =========================================================
+   FEATURED SELECTIONS
+========================================================= */
+
+.featured-selections-section
+{
+	min-height: 100vh;
+}
+.featured-selections-section .left-section {
+	background-color: #EAE4DD;
+}
+
+.left-section {
+	width: 50%;
+	padding: 96px 80px 96px calc((100vw - 1270px) / 2);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.right-section {
+	width: 50%;
+}
+
+.left-section h2 {
+	margin-bottom: 13px;
+}
+
+.dish-item {
+	display: flex;
+	border-bottom: 1px solid #000;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+}
+
+.dish-item:last-child
+{
+	margin-bottom: 13px;
+}
+
+.dish-item-info {
+	width: 82%;
+	padding-right: 20px;
+}
+
+.dish-item-type {
+	width: 10%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.dish-item-type img {
+	width: 24px;
+}
+
+.dish-item-price-box {
+	width: 13%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000;
+}
+
+.dish-label {
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+
+/* =========================================================
+   DISH SLIDER
+========================================================= */
+
+.dish-slider,
+.dish-slider .slick-list,
+.dish-slider .slick-track {
+	height: 100%;
+}
+
+.dish-slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.dish-slider .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	list-style: none;
+	gap: 12px;
+}
+
+.dish-slider .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #EAE4DD;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.dish-slider .slick-dots li.slick-active button {
+	background-color: #EAE4DD;
+}
+
+.dish-slider .slick-prev,
+.dish-slider .slick-next {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -20px;
+	background-color: #000;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.dish-slider .slick-prev {
+	top: 47%;
+	background-image: url(../images/Left-arrow.svg);
+}
+
+.dish-slider .slick-next {
+	top: 54%;
+	background-image: url(../images/Right-arrow.svg);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+	padding: 96px 20px 40px;
+	background: url(../images/Footer-bg.png) center / cover no-repeat;
+}
+
+.footer-top {
+	display: flex;
+	margin-bottom: 180px;
+}
+
+/* Footer Left */
+.footer-left {
+	width: 50%;
+}
+
+.footer-logo {
+	margin-bottom: 16px;
+}
+
+.footer-left p {
+	max-width: 240px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #EAE4DD;
+	font-weight: 500;
+}
+
+.footer-left p a {
+	color: #EAE4DD;
+}
+
+.footer-left p a:hover {
+	color: #BE852B;
+}
+
+.footer-right {
+	width: 50%;
+	display: flex;
+	padding-left: 60px;
+}
+
+.footer-right-1 { width: 30%; }
+.footer-right-2 { width: 35%; }
+.footer-right-3 { width: 35%; }
+
+.footer-right ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-right ul li {
+	margin-bottom: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.footer-right ul li a {
+	color: #EAE4DD;
+	display: flex;
+	align-items: center;
+}
+
+.footer-right ul li a:hover {
+	color: #BE852B;
+}
+
+.footer-right-2 ul li a::after {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 4px;
+	background: url(../images/up-right-arrow-w.svg) center no-repeat;
+}
+
+.footer-right-2 ul li a:hover::after {
+	background-image: url(../images/up-right-arrow.svg);
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #EAE4DD;
+	font-weight: 500;
+}
+
+
+.inner-hero-section
+{
+	position: relative;
+}
+
+/* Hero Heading */
+.inner-hero-section h1 {
+	position: absolute;
+	padding: 0 20px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+	font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.inner-hero-section .inner-banner-slide {
+	height: 100vh;
+	background-position: center !important;
+	background-size: cover;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0 20px;
+}
+
+.inner-hero-section .inner-banner-slide::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.inner-hero-section .inner-banner-slide-1 {
+	background-image: url(../images/1516-fushion-restaurant-hong-kong-drinks.jpg);
+}
+
+.inner-hero-section .inner-banner-slide-2 {
+	background-image: url(../images/1516-fushion-restaurant-drinks-aerial-view.jpg);
+}
+
+.inner-hero-section .slick-dots {
+	display: flex !important;
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+	list-style: none;
+	gap: 12px;
+}
+
+.inner-hero-section .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #EAE4DD;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+	padding: 0;
+}
+
+.inner-hero-section .slick-dots li.slick-active button {
+	background-color: #EAE4DD;
+}
+
+.the-atmosphere-left
+{
+	width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.the-atmosphere-left h2
+{
+	margin-bottom: 32px;
+}
+.the-atmosphere-left p
+{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+}
+.the-atmosphere-left .content-box
+{
+    width: 100%;
+    max-width: 465px;
+    text-align: center;
+}
+.the-atmosphere-right
+{
+	width: 50%;
+}
+.the-atmosphere-right img
+{
+	width: 100%;
+	height: 770px;
+	object-fit: cover;
+}
+.crafted-section
+{
+	padding: 96px 20px;
+}
+.crafted-section h3
+{
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 700;
+	padding: 0 30px;
+	margin-bottom: 40px;
+}
+.crafted-section p
+{
+	font-size: 16px;
+	line-height: 24px;
+}
+.find-us-section
+{
+	padding: 96px 20px;
+}
+.title-with-button
+{
+	display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+.find-us-images
+{
+	display: flex;
+	gap: 20px;
+}
+.find-us-images-box
+{
+	width: 33.33%;
+}
+.find-us-images-box img
+{
+	height: 480px;
+	width: 100%;
+	object-fit: cover;
+}
+.about-slide
+{
+	padding: 0 12px;
+}
+.about-slide img
+{
+	width: 100%;
+	height: 420px;
+	object-fit: cover;
+}
+.about-slider-section .slick-dots
+{
+	display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 1250px;
+   margin: 0 auto;
+   border-radius: 100px;
+   height: 2px;
+   overflow: hidden;
+   margin-top: 32px;
+}
+.about-slider-section .slick-dots li
+{
+	font-size: 0;
+	width: 100%;
+}
+.about-slider-section .slick-dots li button
+{
+	padding: 0;
+	font-size: 0; 
+	width: 100%;
+	border: none;
+	height: 2px;
+	background-color: #F8AEB1;
+}
+.about-slider-section .slick-dots li.slick-active button
+{
+	background-color: #ED1C24;
+	border-radius: 100px;
+}
+.about-slider-section .slick-prev
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 15%;
+	top: 45%;
+	background-color: #000;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.about-slider-section .slick-next
+{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 15%;
+	top: 45%;
+	background-color: #000;
+	border: none;
+	font-size: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.about-slider-section .slick-prev
+{
+	background-image: url(../images/Left-arrow.svg);
+}
+.about-slider-section .slick-next
+{
+	background-image: url(../images/Right-arrow.svg);
+}
+
+/* Location page*/
+
+.inner-hero-section.location-hero-section h1
+{
+	font-size: 72px;
+	line-height: 72px;
+	font-weight: 800;
+	text-align: center;
+	justify-content: center;
+}
+
+.location-hero-section .inner-banner-slide-1
+{
+	background-image: url(../images/location-banner.png);
+}
+.inner-hero-section.location-hero-section .inner-banner-slide::before
+{
+	display: none;
+}
+.causeway-bay-left
+{
+   width: 50%;
+   padding-right: 44px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.causeway-bay-right
+{
+	width: 50%;
+	padding-left: 44px;
+}
+.causeway-bay-right img
+{
+	width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+.address-box-1 h5
+{
+	font-size: 18px;
+   line-height: 28px;
+   font-weight: 600;
+   margin-bottom: 8px;
+}
+.address-box
+{
+	display: flex;
+   align-items: end;
+   gap: 40px;
+}
+.address-box-1, .address-box-2
+{
+	width: 50%;
+}
+.address-box-1 p a
+{
+	color: #000;
+}
+
+
+/*Our Menu */
+
+.menu-hero-section.inner-hero-section h1
+{
+	font-size: 72px;
+    line-height: 72px;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu-hero-section .inner-banner-slide-1
+{
+	background-image: url(../images/1516-fushion-restaurant-food-hong-kong.jpg);
+}
+.menu-hero-section .inner-banner-slide-2
+{
+	background-image: url(../images/1516-fushion-restaurant-drinks-aerial-view.jpg);
+}
+.menu-tabs-wrapper {
+  overflow-x: auto;
+  border-bottom: 1px solid #F8AEB1;
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: max-content;
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-tabs .tab {
+	padding: 0 24px;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 600;
+	color: #F36D72;
+	cursor: pointer;
+	position: relative;
+	white-space: nowrap;
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+}
+.menu-tabs .tab:hover
+{
+	color: #ED1C24;
+}
+.menu-tabs .tab.active {
+  color: #ED1C24;
+}
+
+.menu-tabs .tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background: #ef1d1d;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.menu-content h2 {
+  font-size: 40px;
+  color: #ED1C24;
+  line-height: 48px;
+}
+.menu-content h2 a
+{
+	color: #ED1C24;
+}
+.menu-tab-section
+{
+	padding: 64px 0 0 0;
+}
+.menu-suggestion
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 36px;
+}
+.menu-suggestion
+{
+	width: 100%;
+}
+.menu-suggestion li
+{
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	color: #ED1C24;
+}
+.menu-suggestion li img
+{
+	margin: 0 5px 0 0;
+}
+.tab-content-top {
+	padding: 64px 20px 80px 20px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.tab-content-top h2
+{
+	width: 100%;
+}
+.tab-content-top h3 a
+{
+	color: #ED1C24;
+}
+.tab-content-top p{
+	width: 100%;
+   max-width: 774px;
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: 700;
+}
+.our-menu-slider, .our-menu-slider .slick-list, .our-menu-slider .slick-track, .our-menu-slider .slick-slide
+{
+	height: 100%;
+}
+
+.our-menu-slider img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.our-menu-slider .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	list-style: none;
+	gap: 12px;
+}
+
+.our-menu-slider li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 100px;
+	border: 1px solid #EAE4DD;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.our-menu-slider li.slick-active button {
+	background-color: #EAE4DD;
+}
+.our-menu-list-section
+{
+	min-height: 100vh;
+}
+.our-menu-list-section .left-section
+{
+	width: 50%;
+	padding: 64px 80px 64px calc((100vw - 1270px) / 2);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.our-menu-list-section .left-section .dish-item:last-child {
+    margin-bottom: 0px;
+    border: none;
+    padding: 0;
+}
+
+.our-menu-list-section.bg-wine h3, .our-menu-list-section.bg-wine h4, .our-menu-list-section.bg-wine p, .our-menu-list-section.bg-wine .dish-item-price-box
+{
+	color: #EAE4DD;
+}
+.our-menu-list-section.bg-wine .dish-item
+{
+	border-bottom: 1px solid #EAE4DD;
+}
+.our-menu-list-section.bg-ivory h3, .our-menu-list-section.bg-ivory h4, .our-menu-list-section.bg-ivory p, .our-menu-list-section.bg-ivory .dish-item-price-box
+{
+	color: #000;
+}
+.our-menu-list-section.bg-ivory .dish-item
+{
+	border-bottom: 1px solid #000;
+}
+.our-menu-list-section .left-section h3 {
+    margin-bottom: 32px;
+}
+.dishes-list-head
+{
+	display: flex;
+	margin-bottom: 24px;
+	text-align: right;
+   text-transform: uppercase;
+}
+.first-head
+{
+	width: 76%;
+	padding-right: 20px;
+}
+.hot
+{
+	width: 12%;
+}
+.cold
+{
+	width: 12%;
+}
+.dishes-list-head p
+{
+	text-align: right;
+}
+#drinks .dish-item-info
+{
+	width: 76%;
+}
+#drinks .dish-item-price-box
+{
+	width: 24%;
+}
+#drinks .dish-item-price-box .dish-price
+{
+	width: 50%;
+	text-align: right;
+}
+.our-menu-list-section-2 .first-head
+{
+	width: 70%;
+}
+.our-menu-list-section-2 .hot
+{
+	width: 15%;
+}
+.our-menu-list-section-2 .cold
+{
+	width: 15%;
+}
+#drinks .our-menu-list-section-2 .dish-item-info
+{
+	width: 70%;
+}
+#drinks .our-menu-list-section-2 .dish-item-price-box
+{
+	width: 30%;
+}
+
+/* T&C */
+.tc-sections p
+{
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+} 
+.tc-sections ul
+{
+	list-style: upper-alpha;
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+.tc-sections ul:last-child
+{
+	margin-bottom: 0;
+}
+.tc-sections ul:last-child li:last-child
+{
+	margin-bottom: 0;
+}
+.tc-sections ul li
+{
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.tc-sections ul li a, .tc-sections p a
+{
+	color: #ED1C24;
+	text-decoration: underline;
+}
+.tc-sections ul li a:hover, .tc-sections p a:hover
+{
+	color: #000;
+}
+
+.tc-sections ul li ol
+{
+	padding: 20px 0px 0 20px;
+	list-style: upper-roman;
+}
+.tc-sections ul li ol ol
+{
+	list-style: disc;
+}
+.tc-sections h4
+{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+}
+
+#cookieOverlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: end;
+}
+#cookieModal {
+    padding: 32px 64px;
+    border-radius: 0;
+    text-align: center;
+    width: 100%;
+    background: #ED1C24;
+    color: #EAE4DD;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#cookieModal p{
+	width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 32px 0;
+    color: #EAE4DD;
+}
+#cookieModal p a
+{
+	color: #F8AEB1;
+	text-decoration: underline;
+}
+#cookieModal p a:hover
+{
+	color: #EAE4DD;
+}
+#cookieModal .btn-secondary:hover
+{
+	background-color: #EAE4DD;
+	color: #000;
+}
+
+body.popup-open
+{
+    height: 100vh;
+    overflow: hidden;
+}

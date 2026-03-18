@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'REEJI-CHAO-YuanGBT';
+    src: url('../fonts/REEJI-CHAO-YuanGBT.eot');
+    src: url('../fonts/REEJI-CHAO-YuanGBT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/REEJI-CHAO-YuanGBT.woff2') format('woff2'),
+        url('../fonts/REEJI-CHAO-YuanGBT.woff') format('woff'),
+        url('../fonts/REEJI-CHAO-YuanGBT.ttf') format('truetype'),
+        url('../fonts/REEJI-CHAO-YuanGBT.svg#REEJI-CHAO-YuanGBT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GlowSansTC';
+    src: url('../fonts/GlowSansTCBold.eot');
+    src: url('../fonts/GlowSansTCBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GlowSansTCBold.woff2') format('woff2'),
+        url('../fonts/GlowSansTCBold.woff') format('woff'),
+        url('../fonts/GlowSansTCBold.ttf') format('truetype'),
+        url('../fonts/GlowSansTCBold.svg#GlowSansTCBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GlowSansTC';
+    src: url('../fonts/GlowSansTCMedium.eot');
+    src: url('../fonts/GlowSansTCMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GlowSansTCMedium.woff2') format('woff2'),
+        url('../fonts/GlowSansTCMedium.woff') format('woff'),
+        url('../fonts/GlowSansTCMedium.ttf') format('truetype'),
+        url('../fonts/GlowSansTCMedium.svg#GlowSansTCMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GlowSansTC';
+    src: url('../fonts/GlowSansTCRegular.eot');
+    src: url('../fonts/GlowSansTCRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GlowSansTCRegular.woff2') format('woff2'),
+        url('../fonts/GlowSansTCRegular.woff') format('woff'),
+        url('../fonts/GlowSansTCRegular.ttf') format('truetype'),
+        url('../fonts/GlowSansTCRegular.svg#GlowSansTCRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GlowSansTC';
+    src: url('../fonts/GlowSansTCBook.eot');
+    src: url('../fonts/GlowSansTCBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GlowSansTCBook.woff2') format('woff2'),
+        url('../fonts/GlowSansTCBook.woff') format('woff'),
+        url('../fonts/GlowSansTCBook.ttf') format('truetype'),
+        url('../fonts/GlowSansTCBook.svg#GlowSansTCBook') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GlowSansTC';
+    src: url('../fonts/GlowSansTCExtraBold.eot');
+    src: url('../fonts/GlowSansTCExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GlowSansTCExtraBold.woff2') format('woff2'),
+        url('../fonts/GlowSansTCExtraBold.woff') format('woff'),
+        url('../fonts/GlowSansTCExtraBold.ttf') format('truetype'),
+        url('../fonts/GlowSansTCExtraBold.svg#GlowSansTCExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
